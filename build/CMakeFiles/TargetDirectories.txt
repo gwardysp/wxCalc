@@ -1,0 +1,3 @@
+/home/piotr/Desktop/wxCalc/build/CMakeFiles/wxCalc.dir
+/home/piotr/Desktop/wxCalc/build/CMakeFiles/edit_cache.dir
+/home/piotr/Desktop/wxCalc/build/CMakeFiles/rebuild_cache.dir
