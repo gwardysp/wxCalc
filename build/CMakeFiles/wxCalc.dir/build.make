@@ -73,29 +73,29 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: CMakeFiles/wxCalc.dir/flags.make
 CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp
 CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: CMakeFiles/wxCalc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piotr/Desktop/wxCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/wxCalc.dir/src/MyApp.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wxCalc.dir/src/MyApp.cpp.o -MF CMakeFiles/wxCalc.dir/src/MyApp.cpp.o.d -o CMakeFiles/wxCalc.dir/src/MyApp.cpp.o -c /home/piotr/Desktop/wxCalc/src/MyApp.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wxCalc.dir/src/MyApp.cpp.o -MF CMakeFiles/wxCalc.dir/src/MyApp.cpp.o.d -o CMakeFiles/wxCalc.dir/src/MyApp.cpp.o -c /home/piotr/Desktop/wxCalc/src/MyApp.cpp
 
 CMakeFiles/wxCalc.dir/src/MyApp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxCalc.dir/src/MyApp.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/piotr/Desktop/wxCalc/src/MyApp.cpp > CMakeFiles/wxCalc.dir/src/MyApp.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/piotr/Desktop/wxCalc/src/MyApp.cpp > CMakeFiles/wxCalc.dir/src/MyApp.cpp.i
 
 CMakeFiles/wxCalc.dir/src/MyApp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxCalc.dir/src/MyApp.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/piotr/Desktop/wxCalc/src/MyApp.cpp -o CMakeFiles/wxCalc.dir/src/MyApp.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/piotr/Desktop/wxCalc/src/MyApp.cpp -o CMakeFiles/wxCalc.dir/src/MyApp.cpp.s
 
 CMakeFiles/wxCalc.dir/src/Calc.cpp.o: CMakeFiles/wxCalc.dir/flags.make
 CMakeFiles/wxCalc.dir/src/Calc.cpp.o: /home/piotr/Desktop/wxCalc/src/Calc.cpp
 CMakeFiles/wxCalc.dir/src/Calc.cpp.o: CMakeFiles/wxCalc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piotr/Desktop/wxCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/wxCalc.dir/src/Calc.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wxCalc.dir/src/Calc.cpp.o -MF CMakeFiles/wxCalc.dir/src/Calc.cpp.o.d -o CMakeFiles/wxCalc.dir/src/Calc.cpp.o -c /home/piotr/Desktop/wxCalc/src/Calc.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wxCalc.dir/src/Calc.cpp.o -MF CMakeFiles/wxCalc.dir/src/Calc.cpp.o.d -o CMakeFiles/wxCalc.dir/src/Calc.cpp.o -c /home/piotr/Desktop/wxCalc/src/Calc.cpp
 
 CMakeFiles/wxCalc.dir/src/Calc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxCalc.dir/src/Calc.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/piotr/Desktop/wxCalc/src/Calc.cpp > CMakeFiles/wxCalc.dir/src/Calc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/piotr/Desktop/wxCalc/src/Calc.cpp > CMakeFiles/wxCalc.dir/src/Calc.cpp.i
 
 CMakeFiles/wxCalc.dir/src/Calc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxCalc.dir/src/Calc.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/piotr/Desktop/wxCalc/src/Calc.cpp -o CMakeFiles/wxCalc.dir/src/Calc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/piotr/Desktop/wxCalc/src/Calc.cpp -o CMakeFiles/wxCalc.dir/src/Calc.cpp.s
 
 # Object files for target wxCalc
 wxCalc_OBJECTS = \

@@ -1,19 +1,25 @@
 #ifndef CALC_H
 #define CALC_H
 
-#include<wx-3.2/wx/wx.h>
+
+#include<wx/wx.h>
+#include<vector>
 
 class Calc : public wxFrame
 {
     public:
     Calc(const wxString& title);
     void OnQuit(wxCommandEvent& event);
+    wxBoxSizer* sizer;
+    wxGridSizer* gs;
+    wxTextCtrl* display;
+
+
     
-    private:
-    wxButton * buttons;
+   
 };
 
 
 
 
-#endif;
+#endif

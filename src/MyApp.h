@@ -1,7 +1,8 @@
 #ifndef MY_APP_H
 #define MY_APP_H
 
-#include<wx-3.2/wx/wx.h>
+#include<wx/wx.h>
+#include"Calc.h"
 
 class MyApp : public wxApp
 {
@@ -13,4 +14,4 @@ class MyApp : public wxApp
 
 
 
-#endif;
+#endif

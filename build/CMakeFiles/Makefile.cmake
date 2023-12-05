@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/piotr/Desktop/wxCalc/CMakeLists.txt"
-  "CMakeFiles/3.27.7/CMakeCCompiler.cmake"
-  "CMakeFiles/3.27.7/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.27.7/CMakeSystem.cmake"
+  "CMakeFiles/3.27.9/CMakeCCompiler.cmake"
+  "CMakeFiles/3.27.9/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.27.9/CMakeSystem.cmake"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
