@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/piotr/Desktop/wxCalc/build",
+  "command": "/usr/bin/g++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/local/lib/wx/include/gtk3-unicode-3.2 -isystem /usr/local/include/wx-3.2  -pthread -g -std=gnu++20 -o CMakeFiles/wxCalc.dir/src/MyApp.cpp.o -c /home/piotr/Desktop/wxCalc/src/MyApp.cpp",
+  "file": "/home/piotr/Desktop/wxCalc/src/MyApp.cpp",
+  "output": "CMakeFiles/wxCalc.dir/src/MyApp.cpp.o"
+},
+{
+  "directory": "/home/piotr/Desktop/wxCalc/build",
+  "command": "/usr/bin/g++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/local/lib/wx/include/gtk3-unicode-3.2 -isystem /usr/local/include/wx-3.2  -pthread -g -std=gnu++20 -o CMakeFiles/wxCalc.dir/src/Calc.cpp.o -c /home/piotr/Desktop/wxCalc/src/Calc.cpp",
+  "file": "/home/piotr/Desktop/wxCalc/src/Calc.cpp",
+  "output": "CMakeFiles/wxCalc.dir/src/Calc.cpp.o"
+}
+]

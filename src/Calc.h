@@ -3,7 +3,7 @@
 
 
 #include<wx/wx.h>
-#include<vector>
+#include<array>
 
 class Calc : public wxFrame
 {
@@ -13,6 +13,8 @@ class Calc : public wxFrame
     wxBoxSizer* sizer;
     wxGridSizer* gs;
     wxTextCtrl* display;
+
+    std::array<wxButton*, 9> buttons;
 
 
     
