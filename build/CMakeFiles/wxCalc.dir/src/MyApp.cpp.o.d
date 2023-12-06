@@ -446,4 +446,4 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: \
  /usr/local/include/wx-3.2/wx/filectrl.h \
  /usr/local/include/wx-3.2/wx/mdi.h \
  /usr/local/include/wx-3.2/wx/gtk/mdi.h \
- /home/piotr/Desktop/wxCalc/src/Calc.h
+ /home/piotr/Desktop/wxCalc/src/Calc.h /usr/local/include/wx-3.2/wx/wx.h
