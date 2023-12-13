@@ -183,6 +183,7 @@ CMakeFiles/wxCalc.dir/src/Calc.cpp.o: /home/piotr/Desktop/wxCalc/src/Calc.cpp \
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/specfun.h \
+  /usr/include/c++/13.2.1/bits/sstream.tcc \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/std_function.h \
   /usr/include/c++/13.2.1/bits/stl_algo.h \
@@ -219,6 +220,7 @@ CMakeFiles/wxCalc.dir/src/Calc.cpp.o: /home/piotr/Desktop/wxCalc/src/Calc.cpp \
   /usr/include/c++/13.2.1/cstddef \
   /usr/include/c++/13.2.1/cstdio \
   /usr/include/c++/13.2.1/cstdlib \
+  /usr/include/c++/13.2.1/cstring \
   /usr/include/c++/13.2.1/cwchar \
   /usr/include/c++/13.2.1/cwctype \
   /usr/include/c++/13.2.1/debug/assertions.h \
@@ -245,6 +247,7 @@ CMakeFiles/wxCalc.dir/src/Calc.cpp.o: /home/piotr/Desktop/wxCalc/src/Calc.cpp \
   /usr/include/c++/13.2.1/pstl/execution_defs.h \
   /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
+  /usr/include/c++/13.2.1/sstream \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/stdlib.h \
   /usr/include/c++/13.2.1/streambuf \
@@ -769,6 +772,7 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
   /usr/include/c++/13.2.1/cstddef \
   /usr/include/c++/13.2.1/cstdio \
   /usr/include/c++/13.2.1/cstdlib \
+  /usr/include/c++/13.2.1/cstring \
   /usr/include/c++/13.2.1/cwchar \
   /usr/include/c++/13.2.1/cwctype \
   /usr/include/c++/13.2.1/debug/assertions.h \
@@ -1111,8 +1115,6 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
 
 /usr/local/include/wx-3.2/wx/wxcrt.h:
 
-/usr/include/c++/13.2.1/tr1/legendre_function.tcc:
-
 /usr/include/c++/13.2.1/tr1/ell_integral.tcc:
 
 /usr/include/c++/13.2.1/bits/std_abs.h:
@@ -1125,9 +1127,9 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
 
 /usr/include/bits/types/__locale_t.h:
 
-/usr/include/c++/13.2.1/new:
-
 /usr/local/include/wx-3.2/wx/region.h:
+
+/usr/include/c++/13.2.1/bits/max_size_type.h:
 
 /usr/include/c++/13.2.1/iterator:
 
@@ -1209,6 +1211,16 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
 
 /usr/include/bits/stat.h:
 
+/usr/local/include/wx-3.2/wx/window.h:
+
+/usr/include/c++/13.2.1/bits/requires_hosted.h:
+
+/usr/local/include/wx-3.2/wx/weakref.h:
+
+/usr/local/include/wx-3.2/wx/afterstd.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
 /usr/include/c++/13.2.1/bits/ranges_algobase.h:
 
 /usr/include/bits/libm-simd-decl-stubs.h:
@@ -1224,8 +1236,6 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
 /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h:
 
 /usr/include/linux/close_range.h:
-
-/usr/include/c++/13.2.1/bits/max_size_type.h:
 
 /usr/include/c++/13.2.1/bits/locale_facets.tcc:
 
@@ -1457,15 +1467,7 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
 
 /usr/include/asm-generic/bitsperlong.h:
 
-/usr/local/include/wx-3.2/wx/afterstd.h:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/local/include/wx-3.2/wx/weakref.h:
-
 /usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/13.2.1/tr1/gamma.tcc:
 
 /usr/include/c++/13.2.1/cstdio:
 
@@ -1474,6 +1476,8 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
 /usr/include/c++/13.2.1/bits/cxxabi_forced.h:
 
 /usr/include/asm/types.h:
+
+/usr/include/c++/13.2.1/sstream:
 
 /usr/local/include/wx-3.2/wx/gtk/textentry.h:
 
@@ -1564,6 +1568,8 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
 /usr/include/c++/13.2.1/ext/aligned_buffer.h:
 
 /usr/include/c++/13.2.1/string_view:
+
+/usr/include/c++/13.2.1/bits/sstream.tcc:
 
 /usr/include/strings.h:
 
@@ -1691,6 +1697,12 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
 
 /usr/include/bits/types/locale_t.h:
 
+/usr/include/c++/13.2.1/new:
+
+/usr/include/c++/13.2.1/cstring:
+
+/usr/local/include/wx-3.2/wx/gtk/filectrl.h:
+
 /usr/include/c++/13.2.1/bits/vector.tcc:
 
 /usr/local/include/wx-3.2/wx/affinematrix2d.h:
@@ -1762,6 +1774,10 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
 /usr/include/c++/13.2.1/tr1/special_function_util.h:
 
 /usr/include/bits/wctype-wchar.h:
+
+/usr/include/c++/13.2.1/tr1/gamma.tcc:
+
+/usr/include/c++/13.2.1/tr1/legendre_function.tcc:
 
 /usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc:
 
@@ -2023,8 +2039,6 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
 
 /usr/local/include/wx-3.2/wx/gtk/dialog.h:
 
-/usr/local/include/wx-3.2/wx/gtk/filectrl.h:
-
 /usr/local/include/wx-3.2/wx/gtk/frame.h:
 
 /usr/local/include/wx-3.2/wx/gtk/menu.h:
@@ -2046,10 +2060,6 @@ CMakeFiles/wxCalc.dir/src/MyApp.cpp.o: /home/piotr/Desktop/wxCalc/src/MyApp.cpp 
 /usr/include/linux/types.h:
 
 /usr/local/include/wx-3.2/wx/gtk/statbmp.h:
-
-/usr/include/c++/13.2.1/bits/requires_hosted.h:
-
-/usr/local/include/wx-3.2/wx/window.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h:
 

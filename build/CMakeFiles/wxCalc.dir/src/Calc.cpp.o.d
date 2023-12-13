@@ -445,4 +445,5 @@ CMakeFiles/wxCalc.dir/src/Calc.cpp.o: \
  /usr/local/include/wx-3.2/wx/gtk/filectrl.h \
  /usr/local/include/wx-3.2/wx/filectrl.h \
  /usr/local/include/wx-3.2/wx/mdi.h \
- /usr/local/include/wx-3.2/wx/gtk/mdi.h
+ /usr/local/include/wx-3.2/wx/gtk/mdi.h /usr/include/c++/13.2.1/cstring \
+ /usr/include/c++/13.2.1/sstream /usr/include/c++/13.2.1/bits/sstream.tcc
