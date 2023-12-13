@@ -12,17 +12,21 @@ class Calc : public wxFrame
     wxDECLARE_EVENT_TABLE();
     public:
     Calc(const wxString& title);
-    void OnQuit(wxCommandEvent& event);
-    
-    protected:
-    //Sizers must be public, otherwise they don't work
-    wxBoxSizer* sizer;
-    wxGridSizer* gs;
+ 
+
+    wxPanel *topPanel;
+    wxBoxSizer *topBoxsizer, *subBoxSizer, *textSizer, *keypadSizer, *rightKeypadSizer;
+    wxGridSizer* leftKeypadSizer;
     wxTextCtrl* display;
+    
+   
+    //Sizers must be public, otherwise they don't work
+
+    
 
     //Array of buttons, vectors don't work (duuuuh)
     std::array<wxButton*, 9> buttons;
-    wxButton *add, *sub, *mult, *div, *equal, *decim, *clear, *back, *close;
+    wxButton *add, *sub, *mult, *div, *equal, *decim, *clear, *back;
 
 
     //Functions for buttons

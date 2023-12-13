@@ -59,7 +59,7 @@ wxBEGIN_EVENT_TABLE(Calc, wxFrame)
    EVT_BUTTON(BUTTON_DECIM, Calc::OnDecim)
    EVT_BUTTON(BUTTON_EQUAL, Calc::OnEqual)
    EVT_BUTTON(BUTTON_BACK, Calc::OnBack)
-   EVT_BUTTON(BUTTON_CLOSE, Calc::OnQuit)
+  
 wxEND_EVENT_TABLE()
 
 
@@ -68,76 +68,83 @@ Calc::Calc(const wxString& title)
 : wxFrame(nullptr, -1, title, wxPoint(-1,-1), wxSize(270,220))
 {
    //Initilizeing sizers and display
-   sizer = new wxBoxSizer(wxVERTICAL);
+   topBoxsizer = new wxBoxSizer(wxVERTICAL);
+   topPanel = new wxPanel(this, wxID_ANY);
+
+   
+
+   topBoxsizer->Add(topPanel,1, wxEXPAND | wxALL, 1);
+
+   this->SetSizer(topBoxsizer);
+
+   
+
+   subBoxSizer = new wxBoxSizer(wxVERTICAL);
+
+   topPanel->SetSizer(subBoxSizer);
 
    display = new wxTextCtrl(this, wxID_ANY, wxT(""), wxPoint(-1,-1),
-                            wxSize(-1,-1), wxTE_RIGHT | wxTE_READONLY);
+                            wxSize(-1,-1), wxTE_READONLY | wxTE_RIGHT);
 
   
    display->SetFocus();
 
-   sizer->Add(display, 0, wxEXPAND | wxTOP | wxBOTTOM, 4);
-   gs = new wxGridSizer(5, 4, 4, 4);
+   textSizer = new wxBoxSizer(wxHORIZONTAL);
+   textSizer ->Add(display, 1, wxRIGHT | wxLEFT | wxTOP, 10);
+   subBoxSizer->Add(textSizer, 0, wxEXPAND );
+
+   
 
    //initilizing buttons
-   buttons[0] = new wxButton(this, BUTTON0, wxT("0"));
-   buttons[1] = new wxButton(this, BUTTON1, wxT("1"));
-   buttons[2] = new wxButton(this, BUTTON2, wxT("2"));
-   buttons[3] = new wxButton(this, BUTTON3, wxT("3"));
-   buttons[4] = new wxButton(this, BUTTON4, wxT("4"));
-   buttons[5] = new wxButton(this, BUTTON5, wxT("5"));
-   buttons[6] = new wxButton(this, BUTTON6, wxT("6"));
-   buttons[7] = new wxButton(this, BUTTON7, wxT("7"));
-   buttons[8] = new wxButton(this, BUTTON8, wxT("8"));
-   buttons[9] = new wxButton(this, BUTTON9, wxT("9"));
+   buttons[0] = new wxButton(topPanel, BUTTON0, wxT("0"));
+   buttons[1] = new wxButton(topPanel, BUTTON1, wxT("1"));
+   buttons[2] = new wxButton(topPanel, BUTTON2, wxT("2"));
+   buttons[3] = new wxButton(topPanel, BUTTON3, wxT("3"));
+   buttons[4] = new wxButton(topPanel, BUTTON4, wxT("4"));
+   buttons[5] = new wxButton(topPanel, BUTTON5, wxT("5"));
+   buttons[6] = new wxButton(topPanel, BUTTON6, wxT("6"));
+   buttons[7] = new wxButton(topPanel, BUTTON7, wxT("7"));
+   buttons[8] = new wxButton(topPanel, BUTTON8, wxT("8"));
+   buttons[9] = new wxButton(topPanel, BUTTON9, wxT("9"));
 
-   add = new wxButton(this, BUTTON_ADD, wxT("="));
-   sub = new wxButton(this, BUTTON_SUB, wxT("-"));
-   mult = new wxButton(this, BUTTON_MULT, wxT("*"));
-   div = new wxButton(this, BUTTON_DIV, wxT("/"));
-   equal = new wxButton(this,BUTTON_EQUAL,wxT("="));
-   decim = new wxButton(this,BUTTON_DECIM,wxT("."));
-   clear = new wxButton(this,BUTTON_CLEAR,wxT("C"));
-
-   close = new wxButton(this,BUTTON_CLOSE,wxT("Close"));
-
-   
-
-   //declaring and initilizing operation buttons
-   
-   
-
-   //Connect(wxID_EXIT, wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Calc::OnQuit) );
-   
-
-   //adding buttons to the grid
-   gs->Add(clear, wxID_ANY, wxEXPAND);
-   gs->Add(back, wxID_ANY, wxEXPAND);
-   gs->Add(close,  wxID_ANY, wxEXPAND);
-   gs->Add(new wxStaticText(this, -1, wxT("")), 0, wxEXPAND);
-   gs->Add(buttons[7],  wxID_ANY, wxEXPAND);
-   gs->Add(buttons[8],  wxID_ANY, wxEXPAND);
-   gs->Add(buttons[9],  wxID_ANY, wxEXPAND);
-   gs->Add(div,  wxID_ANY, wxEXPAND);
-   gs->Add(buttons[4],  wxID_ANY, wxEXPAND);
-   gs->Add(buttons[5],  wxID_ANY, wxEXPAND);
-   gs->Add(buttons[6],  wxID_ANY, wxEXPAND);
-   gs->Add(mult,  wxID_ANY, wxEXPAND);
-   gs->Add(buttons[1],  wxID_ANY, wxEXPAND);
-   gs->Add(buttons[2], 0, wxEXPAND);
-   gs->Add(buttons[3], 0, wxEXPAND);
-   gs->Add(sub,  wxID_ANY, wxEXPAND);
-   gs->Add(decim,  wxID_ANY, wxEXPAND);
-   gs->Add(buttons[0],  wxID_ANY, wxEXPAND);
-   gs->Add(equal,  wxID_ANY, wxEXPAND);
-   gs->Add(add,  wxID_ANY, wxEXPAND);
+   add = new wxButton(topPanel, BUTTON_ADD, wxT("="));
+   sub = new wxButton(topPanel, BUTTON_SUB, wxT("-"));
+   mult = new wxButton(topPanel, BUTTON_MULT, wxT("*"));
+   div = new wxButton(topPanel, BUTTON_DIV, wxT("/"));
+   equal = new wxButton(topPanel,BUTTON_EQUAL,wxT("="));
+   decim = new wxButton(topPanel,BUTTON_DECIM,wxT("."));
+   clear = new wxButton(topPanel,BUTTON_CLEAR,wxT("C"));
 
 
-  
-   //adding grid to the sizer
-   sizer->Add(gs,  wxID_ANY, wxEXPAND);
-   SetSizer(sizer);
-   SetMinSize(wxSize(270, 220));
+   leftKeypadSizer = new wxGridSizer(5,3,10,10);
+   leftKeypadSizer->Add(clear);
+   leftKeypadSizer->Add(div);
+   leftKeypadSizer->Add(mult);
+   leftKeypadSizer->Add(buttons[7]);
+   leftKeypadSizer->Add(buttons[8]);
+   leftKeypadSizer->Add(buttons[9]);
+   leftKeypadSizer->Add(buttons[4]);
+   leftKeypadSizer->Add(buttons[5]);
+   leftKeypadSizer->Add(buttons[6]);
+   leftKeypadSizer->Add(buttons[1]);
+   leftKeypadSizer->Add(buttons[2]);
+   leftKeypadSizer->Add(buttons[3]);
+   leftKeypadSizer->Add(new wxButton(topPanel, -1, wxT("fuck")));
+   leftKeypadSizer->Add(buttons[0]);
+   leftKeypadSizer->Add(decim);
+
+   rightKeypadSizer = new wxBoxSizer(wxVERTICAL);
+   rightKeypadSizer->Add(add, 1, wxEXPAND | wxALL, 10);
+   rightKeypadSizer->Add(sub, 2, wxEXPAND | wxALL, 10);
+   rightKeypadSizer->Add(equal, 2, wxEXPAND | wxALL, 10);
+
+   keypadSizer = new wxBoxSizer(wxHORIZONTAL);
+   keypadSizer->Add(leftKeypadSizer, 3, wxEXPAND | wxTOP, 10);
+   keypadSizer->Add(rightKeypadSizer,1, wxEXPAND );
+
+   subBoxSizer->Add(keypadSizer, 1, wxEXPAND);
+   this->SetMinSize(subBoxSizer->GetMinSize());
+   this->SetSize(subBoxSizer->GetSize());
 
    Centre();
 }
@@ -384,10 +391,7 @@ void Calc::UpdateRes()
 
 }
 
-void Calc::OnQuit(wxCommandEvent &event)
-{
-   Close(true);
-}
+
 
 void Calc::OnBack(wxCommandEvent &event)
 {
