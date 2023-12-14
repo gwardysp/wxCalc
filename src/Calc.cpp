@@ -34,7 +34,7 @@ enum {
    BUTTON_DECIM = 1016,
    BUTTON_EQUAL = 1017,
 
-   BUTTON_CLOSE = 1018
+   BUTTON00 = 1018
 
 
 
@@ -59,6 +59,7 @@ wxBEGIN_EVENT_TABLE(Calc, wxFrame)
    EVT_BUTTON(BUTTON_DECIM, Calc::OnDecim)
    EVT_BUTTON(BUTTON_EQUAL, Calc::OnEqual)
    EVT_BUTTON(BUTTON_BACK, Calc::OnBack)
+   EVT_BUTTON(BUTTON00, Calc::OnBut00)
   
 wxEND_EVENT_TABLE()
 
@@ -73,7 +74,7 @@ Calc::Calc(const wxString& title)
 
    
 
-   topBoxsizer->Add(topPanel,1, wxEXPAND | wxALL, 1);
+   topBoxsizer->Add(topPanel,1 , wxEXPAND | wxALL, 1);
 
    this->SetSizer(topBoxsizer);
 
@@ -83,7 +84,7 @@ Calc::Calc(const wxString& title)
 
    topPanel->SetSizer(subBoxSizer);
 
-   display = new wxTextCtrl(this, wxID_ANY, wxT(""), wxPoint(-1,-1),
+   display = new wxTextCtrl(topPanel, wxID_ANY, wxT(""), wxPoint(-1,-1),
                             wxSize(-1,-1), wxTE_READONLY | wxTE_RIGHT);
 
   
@@ -114,6 +115,7 @@ Calc::Calc(const wxString& title)
    equal = new wxButton(topPanel,BUTTON_EQUAL,wxT("="));
    decim = new wxButton(topPanel,BUTTON_DECIM,wxT("."));
    clear = new wxButton(topPanel,BUTTON_CLEAR,wxT("C"));
+   but00 = new wxButton(topPanel, BUTTON00, wxT("00"));
 
 
    leftKeypadSizer = new wxGridSizer(5,3,10,10);
@@ -129,7 +131,7 @@ Calc::Calc(const wxString& title)
    leftKeypadSizer->Add(buttons[1]);
    leftKeypadSizer->Add(buttons[2]);
    leftKeypadSizer->Add(buttons[3]);
-   leftKeypadSizer->Add(new wxButton(topPanel, -1, wxT("fuck")));
+   leftKeypadSizer->Add(but00);
    leftKeypadSizer->Add(buttons[0]);
    leftKeypadSizer->Add(decim);
 
@@ -139,7 +141,7 @@ Calc::Calc(const wxString& title)
    rightKeypadSizer->Add(equal, 2, wxEXPAND | wxALL, 10);
 
    keypadSizer = new wxBoxSizer(wxHORIZONTAL);
-   keypadSizer->Add(leftKeypadSizer, 3, wxEXPAND | wxTOP, 10);
+   keypadSizer->Add(leftKeypadSizer, 0, wxEXPAND | wxTOP, 10);
    keypadSizer->Add(rightKeypadSizer,1, wxEXPAND );
 
    subBoxSizer->Add(keypadSizer, 1, wxEXPAND);
@@ -402,6 +404,22 @@ void Calc::OnBack(wxCommandEvent &event)
    else
    {
       rightOp.pop_back();
+   }
+
+   UpdateRes();
+}
+
+void Calc::OnBut00(wxCommandEvent &event)
+{
+   if(currentOperand == LEFT_OPPERAND)
+   {
+      leftOp.push_back('0');
+      leftOp.push_back('0');
+   }
+   else
+   {
+      rightOp.push_back('0');
+      rightOp.push_back('0');
    }
 
    UpdateRes();

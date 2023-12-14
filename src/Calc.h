@@ -25,8 +25,8 @@ class Calc : public wxFrame
     
 
     //Array of buttons, vectors don't work (duuuuh)
-    std::array<wxButton*, 9> buttons;
-    wxButton *add, *sub, *mult, *div, *equal, *decim, *clear, *back;
+    std::array<wxButton*, 10> buttons;
+    wxButton *add, *sub, *mult, *div, *equal, *decim, *clear, *back, *but00;
 
 
     //Functions for buttons
@@ -40,6 +40,8 @@ class Calc : public wxFrame
     void OnEight(wxCommandEvent &event);
     void OnNine(wxCommandEvent &event);
     void OnZero(wxCommandEvent &event);
+
+    void OnBut00(wxCommandEvent &event);
    
     void OnAdd(wxCommandEvent &event);
     void OnSub(wxCommandEvent &event);
