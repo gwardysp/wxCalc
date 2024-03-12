@@ -108,7 +108,7 @@ Calc::Calc(const wxString& title)
    buttons[8] = new wxButton(topPanel, BUTTON8, wxT("8"));
    buttons[9] = new wxButton(topPanel, BUTTON9, wxT("9"));
 
-   add = new wxButton(topPanel, BUTTON_ADD, wxT("="));
+   add = new wxButton(topPanel, BUTTON_ADD, wxT("+"));
    sub = new wxButton(topPanel, BUTTON_SUB, wxT("-"));
    mult = new wxButton(topPanel, BUTTON_MULT, wxT("*"));
    div = new wxButton(topPanel, BUTTON_DIV, wxT("/"));

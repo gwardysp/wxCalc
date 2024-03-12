@@ -2,8 +2,7 @@
 #define CALC_H
 
 
-
-#include<wx-3.2/wx/wx.h>
+#include <wx-3.3/wx/wx.h>
 #include<array>
 #include<cstring>
 

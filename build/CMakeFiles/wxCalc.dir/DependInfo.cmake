@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/piotr/Desktop/wxCalc/src/Calc.cpp" "CMakeFiles/wxCalc.dir/src/Calc.cpp.o" "gcc" "CMakeFiles/wxCalc.dir/src/Calc.cpp.o.d"
-  "/home/piotr/Desktop/wxCalc/src/MyApp.cpp" "CMakeFiles/wxCalc.dir/src/MyApp.cpp.o" "gcc" "CMakeFiles/wxCalc.dir/src/MyApp.cpp.o.d"
+  "/home/piotr/CPP_Foolery/wxCalc/src/Calc.cpp" "CMakeFiles/wxCalc.dir/src/Calc.cpp.o" "gcc" "CMakeFiles/wxCalc.dir/src/Calc.cpp.o.d"
+  "/home/piotr/CPP_Foolery/wxCalc/src/MyApp.cpp" "CMakeFiles/wxCalc.dir/src/MyApp.cpp.o" "gcc" "CMakeFiles/wxCalc.dir/src/MyApp.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
