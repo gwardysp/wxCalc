@@ -1,3 +1,0 @@
-/home/piotr/CPP_Foolery/wxCalc/build/CMakeFiles/wxCalc.dir
-/home/piotr/CPP_Foolery/wxCalc/build/CMakeFiles/edit_cache.dir
-/home/piotr/CPP_Foolery/wxCalc/build/CMakeFiles/rebuild_cache.dir
